@@ -1,0 +1,189 @@
+body {
+	background-color: black;
+}
+
+#container {
+	margin: 0 auto;
+	border-bottom: 2px solid salmon;
+}
+
+.navigation {
+	margin: 0 auto;
+	padding: 0;
+	min-height: 40px;
+}
+
+.navigation li {
+	display: inline;
+}
+
+#header {
+	max-width: 570px;
+	margin: 0 auto;
+}
+
+.navigation li {
+	color: #0280da;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 5px;
+	text-decoration: none;
+}
+
+.navigation li a {
+	color: white;
+	text-decoration: none;
+}
+
+.navigation li.icon {
+	display: none;
+}
+
+ul li.active a {
+	color: darksalmon !important;
+}
+
+.navigation li .dropdown-child {
+	display: none;
+	position: absolute;
+}
+
+.navigation li.dropdown:hover .dropdown-child {
+	display: inline;
+	position: absolute;
+}
+
+.navigation li.dropdown:hover .dropdown-child ul li{
+	display: block;
+}
+
+.navigation li.dropdown:hover {
+	border-bottom: solid 1px white;
+}
+
+.content {
+	color: #FFF;
+}
+
+.content .img img {
+	width: 65%;
+}
+
+.content .img {
+	float: left;
+	width: 25%;
+}
+
+.description {
+	float: left;
+	width: 350px;
+}
+
+.content .description .info .info-head {
+	border-bottom: 2px solid salmon
+}
+
+.info-head span {
+	color: salmon;
+	font-size: 26px;
+}
+
+.info span.bolded {
+	font-weight: bold;
+}
+
+ol {
+	list-style: upper-latin;
+}
+
+h1 {
+	color: darksalmon;
+}
+
+.table-friends {
+	color: white;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.table-headers {
+	color: salmon;
+	font-weight: bold;
+}
+
+.table-friends img {
+	width: 15%;
+}
+
+td,
+th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: grey;
+}
+
+.contacts-form {
+	color: salmon;
+}
+
+.contacts-form .contact-insides {
+	margin: 20px 0px;
+}
+
+.contacts-form .contact-message {
+	margin: 20px 0px;
+}
+
+.contacts-form .contacts-information input,
+.contacts-form .contact-message textarea {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.contacts-form .contact-message textarea {
+	overflow: hidden;
+}
+
+.contacts-form .radio-buttons {
+	/* display: block; */
+}
+
+.contacts-form .inputs-left {
+	float: left;
+	margin-right: 40px;
+}
+
+@media screen and (max-width: 600px) {
+	.navigation li {
+		display:none;
+	}
+	.navigation li.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.responsive {
+		position: relative;
+	}
+	.responsive li.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.responsive li {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+  
+  }
